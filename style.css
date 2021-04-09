@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* her our Worke begine */
+html {
+  max-height: 500px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+h2 {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+h5,
+h6,
+.custom {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+.continer {
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.continer .above {
+  position: absolute;
+  transform: translate(-35%, -55%);
+}
+.continer .bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(40%, 65%);
+}
+/* littel box */
+.littel-box {
+  width: 450px;
+  height: 400px;
+  background-color: aliceblue;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 25px;
+  overflow: hidden;
+  transform: scale(0.8);
+}
+.first {
+  height: 35%;
+  background-image: url(images/bg-pattern-card.svg);
+}
+.second {
+  position: relative;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second .img-here {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  /* background-color: black; */
+  margin: 0 auto;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 5px solid white;
+  overflow: hidden;
+  background-image: url(images/image-victor.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.second .text-inside {
+  text-align: center;
+  margin-top: 50px;
+}
+.second .text-inside h5 {
+  margin-top: 10px;
+}
+.thired {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+}
+.thired .col {
+  width: 33.3%;
+  text-align: center;
+}
+.thired .col h6 {
+  margin: 10px 0;
+}
+@media (max-width: 706px) {
+  .continer .above {
+    transform: translate(-70%, -55%);
+  }
+  .continer .bottom {
+    transform: translate(70%, 55%);
+  }
+}
+@media (max-height: 700px) {
+  .continer .bottom {
+    transform: translate(70%, 75%);
+  }
+}
+.attribution {
+  font-size: 15px;
+}
+.attribution a:hover {
+  color: white;
+}
